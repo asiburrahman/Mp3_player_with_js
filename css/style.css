@@ -60,7 +60,7 @@ html{
     width: 25rem;
     height: 25rem;
     margin: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .music_img img{
@@ -72,12 +72,60 @@ html{
     box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
 }
 
+.progressbar_main{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    
+
+}
+.duration_meter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress_div{
+    position: relative;
+    width: 100%;
+    height: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.7),0 4px 8px rgba(0, 0, 0, 0.7),0 8px 16px rgba(0, 0, 0, 0.7),0 32px 64px rgba(0, 0, 0, 0.7) ;
+    border-radius: 4rem;
+    margin-top: 0.5rem;
+    transition: width 1s linear;
+    -moz-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.progress{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #444;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), 0 2px 4px rgba(0, 0, 0, 0.7),0 4px 8px rgba(0, 0, 0, 0.7),0 8px 16px rgba(0, 0, 0, 0.7),0 32px 64px rgba(0, 0, 0, 0.7) ;
+    border-radius: 4rem;
+    /* transition: width 1s linear;
+    -moz-transition: width 1s linear;
+    -o-transition: width 1s linear;
+    -webkit-transition: width 1s linear; */
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
 .controls{
     width: 20rem;
     display: flex;
     justify-content: space-between;
     margin: auto;
     filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+   
 }
 
 .controls .fas{
